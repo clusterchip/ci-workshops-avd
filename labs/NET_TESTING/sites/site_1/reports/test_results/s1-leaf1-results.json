@@ -392,6 +392,30 @@
   },
   {
     "name": "s1-leaf1",
+    "test": "VerifyLoggingHosts",
+    "categories": [
+      "logging"
+    ],
+    "description": "Verifies logging hosts (syslog servers) for a specified VRF.",
+    "result": "failure",
+    "messages": [
+      "Syslog servers ['10.100.100.100'] are not configured in VRF default"
+    ]
+  },
+  {
+    "name": "s1-leaf1",
+    "test": "VerifyLoggingSourceIntf",
+    "categories": [
+      "logging"
+    ],
+    "description": "Verifies logging source-interface for a specified VRF.",
+    "result": "failure",
+    "messages": [
+      "Source-interface 'Management0' is not configured in VRF default"
+    ]
+  },
+  {
+    "name": "s1-leaf1",
     "test": "VerifyMlagStatus",
     "categories": [
       "mlag"
